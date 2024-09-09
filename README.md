@@ -4,7 +4,7 @@ Learning Node.js for the very first time is a joyous journey—building powerful
 
 ## Project Overview
 
-This repository contains a Node.js project aimed at learning and experimenting with various aspects of Node.js. It includes sample code and exercises that demonstrate fundamental concepts and practical applications.
+This repository contains a Node.js project aimed at learning and experimenting with various aspects of Node.js. It includes sample code that demonstrate fundamental concepts and practical applications.
 
 ## Installation
 
