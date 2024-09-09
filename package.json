@@ -1,0 +1,19 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "Learning node.js for the very first time is a joyous journey—building powerful applications and crafting dynamic apps has been both fun and inspiring!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swayamprabhamaurya/node-farm.git"
+  },
+  "author": "Swayam Prabha Maurya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swayamprabhamaurya/node-farm/issues"
+  },
+  "homepage": "https://github.com/swayamprabhamaurya/node-farm#readme"
+}
