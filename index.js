@@ -1,7 +1,8 @@
 const obj =require("fs");
 const http =require('http');
 const url =require('url'); 
-const replaceTemplate=require('./starter/modules/replaceTemplate')
+const slugify =require('slugify');// for readability of urls like /product?id=1 in our project to
+const replaceTemplate=require('./starter/modules/replaceTemplate');
 //////FILE SYSTEM///////////
 
 //Blocking , synchronous way
@@ -52,6 +53,8 @@ const tempProduct=obj.readFileSync('./starter/templates/template-product.html',"
 const data=obj.readFileSync('./starter/dev-data/data.json',"utf-8") /// (`${__dirname}/dev-data/data.json`    to find the exact directory
 const dataObj=JSON.parse(data) //to convert to javascript format not json format here data is a string
 
+const slugs=dataObj.map(el=>slugify(el.productName,{lower:true}))
+console.log(slugs);
 const server=http.createServer((req,res) => { 
     //console.log(req); // we will be able to see bunch of requst when we handle the request in here
     //console.log(req.url); // to monitor routing i.e. diff url has diff task
