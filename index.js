@@ -1,7 +1,7 @@
 const obj =require("fs");
 const http =require('http');
 const url =require('url'); 
-const slugify =require('slugify');// for readability of urls like /product?id=1 in our project to
+const slugify =require('slugify');// for readability of urls like /product?id=1 in our project
 const replaceTemplate=require('./starter/modules/replaceTemplate');
 //////FILE SYSTEM///////////
 
@@ -54,7 +54,9 @@ const data=obj.readFileSync('./starter/dev-data/data.json',"utf-8") /// (`${__di
 const dataObj=JSON.parse(data) //to convert to javascript format not json format here data is a string
 
 const slugs=dataObj.map(el=>slugify(el.productName,{lower:true}))
-console.log(slugs);
+console.log(slugs);//here slufify is now dependency of our code and this slugs should be written in the place of id to see the changes in data.json
+
+
 const server=http.createServer((req,res) => { 
     //console.log(req); // we will be able to see bunch of requst when we handle the request in here
     //console.log(req.url); // to monitor routing i.e. diff url has diff task
